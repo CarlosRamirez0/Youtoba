@@ -141,6 +141,7 @@ a{
     background-color: rgb(36, 36, 36);
     border-radius: 100%;
     cursor: pointer;
+    flex-shrink: 0;
     
 }
 
@@ -673,15 +674,6 @@ a{
 
 /* Card */
 
-/* Media Query*/
-@media (max-width: 1250px){
-    .main{
-        grid-template-columns: 1fr;
-    }
-}
-
-
-/* Media Query*/
 #descricao {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
@@ -724,3 +716,74 @@ a{
 
     
 }
+
+/* Media Query*/
+@media (max-width: 1000px){
+     /*Lado Esquerdo */
+     /*Lado Esquerdo */
+        .Esquerda{
+            max-width: calc(100vw - 100px);
+            width: 100%;
+        }
+        .videoparent{
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+        }
+        .videocris{
+            aspect-ratio: 16/9;
+            height: 50%;
+            width: 100%;
+            height: auto;
+        }
+        /*Lado Esquerdo */
+
+         /*Lado Direito*/
+        .Direita{
+            width: 100%;
+            max-width: calc(100vw - 100px);
+            justify-content: space-between;
+        }
+            .videocard{
+                max-width: calc(100vw - 100px);
+                width: 100%;
+                font-stretch: wider;
+            }
+               .cardtext{
+                width: 100%;
+               }
+               .cardtext span{
+                width: 100%;
+               }
+                    .cardtitle{
+                        font-stretch: extra-expanded;
+                        margin: 0;
+                        padding: 2px;
+                        font-weight: lighter;
+                        width: 200px;
+                        max-width: none;
+                        word-break: keep-all;
+                        white-space: nowrap;
+                        font-size: 0.9rem;
+                        height: 1rem;
+                        width: 100%;
+                    }
+        /*Lado Direito*/
+.MainParent{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+}
+    .MainParent main{
+        margin-left: auto;
+    margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+
+/* Media Query*/
